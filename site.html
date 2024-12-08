@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reality</title>
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header id="header">
+        <a href="site.html" class="logo" data-aos="zoom-out" data-aos-duration="1100">
+            <img src="images/logo.png" alt="Logo">
+        </a>
+        <!-- Navigation Bar -->
+        <ul class="navigation">
+            <li><a href="vr page/vr-site.html">Virtual Reality</a></li>
+            <li><a href="ar page/ar-site.html">Augmented Reality</a></li>
+            <li><a href="aplc/app-site.html">Technology</a></li>
+            <li><a href="future/future.html">Future</a></li>
+        </ul>
+        <!-- Burger Menu -->
+        <div class="right-content">
+              <div id="menu-icon">
+                <img src="/images/menu-line.png">
+            </div>
+    </header>
+    
+    <!-- First Section -->
+    <section class="hero">
+            <div class="hero-text">
+                <!-- Mini Header-->
+                <h5 data-aos="fade-left" data-aos-duration="1100"> Virtual and Augmented</h5>
+                <!-- Big Text -->
+                <h1 data-aos="slide-up" data-aos-duration="1100">REALITY</h1>
+                <!-- Paragraph -->
+                <h5 data-aos="fade-left" data-aos-duration="1100"> 
+                    Virtual Reality (VR) and Augmented Reality (AR) are transforming how we 
+                    experience the world. VR immerses you in digital environments, while AR
+                     enhances real-life settings with interactive digital elements. Together, 
+                     they are immersive, innovative, and transformative.</h5>
+            </div>
+            <!-- VR Man Image -->
+            <div class="hero-image" data-aos="zoom-out" data-aos-duration="1100">
+                <img src="./images/vrman.png" width="100%" height="100%" style="scale: 1.1;">
+            </div> 
+        </section>
+    </section>
+
+    <!-- Second Section -->
+    <section class="hero-2">
+        <div class="hero-text-2">
+            <!-- Mini Header -->
+            <h5 data-aos="fade-down" data-aos-duration="1100">Transform your life into so much more with Virtual and Augmented</h5>
+            <!-- Big Text -->
+            <h1 data-aos="fade-up" data-aos-duration="1100" class="hero-2-animation animate">REALITY</h1>
+        </div>
+        <!-- Video -->
+        <video autoplay loop muted plays-inline class="background-clip">
+            <source src="images/video.mp4" type="video/mp4">
+        </video>
+    </section>
+    
+    <!-- Third Section -->
+    <section class="hero-3">
+        <!-- Image -->
+        <div class="hero-image-3" data-aos="zoom-out" data-aos-duration="1100">
+            <img src="images/oculus-quest.png" width="100%" height="100%">
+        </div>  
+        <div class="hero-text-3"> 
+            <!-- Big Header -->
+            <h5 data-aos="flip-up" data-aos-duration="1200">Virtual Reality</h5>
+            <!-- Mini Text -->
+            <h1 data-aos="fade-up" data-aos-duration="1100">A gateway to an entirely imagined space. Virtual Reality (VR) offers 
+            the possibility to move within artificial environments, giving an unparalleled experience across gaming, education, 
+            and industry. Using software and hardware, VR technology transforms how we engage with digital content by blurring 
+            the line between the virtual world and reality.<br> To learn more, click below.</h1>
+            <!-- Button -->
+                <div class="main-hero-3">
+                    <a href="vr page/vr-site.html" class="btn" data-aos="fade-up" data-aos-duration="1100">READ MORE</a>
+                </div>
+            </div>
+    </section>
+
+    <!-- Fourth Section -->
+    <section class="hero-4">
+        <div class="hero-text-4"  data-aos="zoom-out" data-aos-duration="1100">
+            <!-- Big Header -->
+            <h5 data-aos="flip-up" data-aos-duration="1200">Augmented Reality</h5>
+            <!-- Mini Text -->
+            <h1 data-aos="fade-up" data-aos-duration="1100">A seamless blend of the digital world and reality. Augmented Reality (AR) 
+            technology enhances our world through the use of technologically generated digital information, allowing for an enhanced 
+            real-world environment with interactive and computer-generated sensory inputs.<br> To learn more, click below </h1>
+            <!-- Button -->
+            <div class="main-hero-4">
+                <a href="ar page/ar-site.html" class="btn2" data-aos="fade-up" data-aos-duration="1100">READ MORE</a>
+            </div>
+        </div>
+        <!-- Image -->
+        <div class="hero-image-4" data-aos="zoom-out" data-aos-duration="1100">
+            <img src="images/ar-reality.png" width="100%" height="100%">
+        </div>  
+    </section>
+
+    <!-- Javascript Link -->
+     <script src="site.js"></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <!-- https://github.com/michalsnik AOS SCRIPT LIBRARY -->
+     <script>
+        AOS.init({
+            offset: 1,
+        });
+     </script>
+     <!-- https://github.com/mrdoob/three.js -->
+     <script src="three.r134.min.js"></script>
+     <!-- https://vanta.netlify.app/ -->
+     <script src="vanta.net.min.js"></script>
+     <!-- https://github.com/mrdoob/three.js -->
+     <script>
+        VANTA.NET({
+        el: "#background",
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x555555,
+        backgroundColor: 0x50505,
+        points: 12.00,
+        maxDistance: 18.00
+     })
+
+     
+     </script>
+</body>
+</html>
+

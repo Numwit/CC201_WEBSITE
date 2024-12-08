@@ -1,0 +1,253 @@
+
+body {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(26, 26, 26) 3%, rgb(0, 0, 0) 38%, rgb(19, 19, 19) 68%, rgb(34, 34, 34) 98%);
+    animation: gradient 4s ease infinite; 
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+body, canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  
+}
+
+.wrapping {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1024px;
+    width: 1440px;
+}
+
+.information-text {
+    position: absolute;
+    top: 615px;
+    left: 0;
+    width: 1440px;
+    font-family: "Manrope", Helvetica;
+    font-weight: 200;
+    color: #ebebeb;
+    font-size: 20px;
+    text-align: center;
+    animation: fade-down 4s linear;
+}
+
+.overlap-2 {
+    position: absolute;
+    width: 1215px;
+    height: 428px;
+    top: 175px;
+    left: 113px;
+}
+
+.background-text {
+    position: absolute;
+    width: 1455px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(91.37, 91.37, 91.37, 0.33) 0%, rgba(175.44, 175.44, 175.44, 0.02) 65.5%, rgba(153, 153, 153, 0) 80%);
+    background-clip: text;
+    font-family: "Manrope", Helvetica;
+    font-weight: 800;
+    color: transparent;
+    font-size: 300px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+
+    animation: fade-up 2s ease-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.vr-front {
+    
+    position: absolute;
+    width: 217px;
+    height: 165px;
+    top: 263px;
+    left: 499px;
+    object-fit: contain;
+    animation: fade-down 2s linear;
+    position: absolute;
+    top: 263px;
+    left: 499px;
+    width: 217px;
+    height: 165px;
+}
+
+.arrow-button {
+    position: absolute;
+    top: 350px;
+    left: 750px;
+    width: 48px;
+    height: 48px;
+    animation: fade-in 0.3s linear;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease; 
+
+}
+
+.arrow-button2 {
+    position: absolute;
+    top: 350px;
+    left: 420px;
+    width: 48px;
+    height: 48px;
+    animation: fade-in 0.3s linear;
+    transform: scaleX(-1);
+    cursor: pointer;
+}
+
+#additional-text {
+    font-family: "Manrope", Helvetica;
+    font-weight: 250;
+    opacity: 30%;
+    color: #ebebeb;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    top: 640px;
+    transform: translateX(-50%);
+    user-select: none;
+    transition: opacity 0.5s ease-in-out;
+    
+    
+}
+
+.information-text, .background-text {
+    user-select: none;
+}
+
+#arrow-button, #arrow-button2 {
+    user-select: none;
+}
+
+@keyframes fade-up {
+    0% {
+        font-size: 295px;
+    }
+    100% {
+        font-size: 300px;
+    }
+}
+
+@keyframes fade-down {
+    from {
+        opacity: 0;
+    }
+    from {
+        transform: translateY(7px);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .vr-front {
+        width: 170px;
+        height: 120px;
+        left: 520px;
+        top: 250px;
+    }
+
+    .information-text {
+        top: 580px;
+        font-size: 18px;
+    }
+
+    .background-text {
+        font-size: 200px;
+        padding-top: 50px;
+    }
+
+    .arrow-button, .arrow-button2 {
+        top: 300px;
+
+    }
+
+    #additional-text {
+        top: 620px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .vr-front {
+        width: 100%;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .information-text {
+        width: 100%;
+        font-size: 16px;
+        top: 550px;
+    }
+
+    .background-text {
+        font-size: 200px;
+        
+    }
+
+    .arrow-button, .arrow-button2 {
+        top: 300px;
+        width: 40px;
+        height: 40px;
+    }
+
+    #additional-text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .vr-front {
+        width: 120px;
+        height: 92px;
+        top: 180px;
+    }
+
+    .information-text {
+        font-size: 14px;
+        top: 520px;
+        font-size: medium;
+    }
+
+    .background-text {
+        font-size: 90px;
+        padding-top: 100px;
+    }
+
+    .arrow-button, .arrow-button2 {
+        width: 36px;
+        height: 36px;
+    }
+
+    #additional-text {
+        font-size: 10px;
+        top: 600px;
+    }
+
+    
+}
